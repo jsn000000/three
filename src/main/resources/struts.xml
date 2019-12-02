@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="province" namespace="/pro" extends="struts-default">
+        <action name="queryAll" method="queryAll" class="com.baizhi.action.ProvinceAction"/>
+        <action name="queryByProvince" method="queryByProvince" class="com.baizhi.action.ProvinceAction"/>
+        <action name="queryByCity" method="queryByCity" class="com.baizhi.action.ProvinceAction"/>
+
+    </package>
+</struts>
+
+
