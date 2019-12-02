@@ -19,6 +19,7 @@ public class ProvinceAction {
 
     public String queryAll() throws IOException {
         System.out.println();
+        System.out.println("asassa");
         ProvinceService ps = new ProvinceServiceImpl();
         List<Province> provinces = ps.queryAll();
         //将对象转换为json响应ajax
