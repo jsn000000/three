@@ -8,7 +8,6 @@ import com.baizhi.service.ProvinceService;
 import com.baizhi.service.ProvinceServiceImpl;
 import org.apache.struts2.ServletActionContext;
 
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,7 +18,7 @@ public class ProvinceAction {
     private String cityCode;
 
     public String queryAll() throws IOException {
-
+        System.out.println();
         ProvinceService ps = new ProvinceServiceImpl();
         List<Province> provinces = ps.queryAll();
         //将对象转换为json响应ajax
